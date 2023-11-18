@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Racer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- home -->
+ <div id="homeContainer">
+  <div id="homebluecar"><img src="blue.png" alt=""></div>
+  <h1 class="theRace">The Racer</h1>
+  <p class="play" onclick="playOpen()">Play</p>
+  <p class="play" onclick="stop()">Store</p>
+  <div id="homeplayercar"><img id="homecar" src="IMG_20231115_113413-depositphotos-bgremover.png" alt=""></div>
+  <div class="storeContainer" id="storCon">
+   <div onclick="cara()" class="carBox"><img src="IMG_20231115_113413-depositphotos-bgremover.png" alt=""></div>
+   <div onclick="carb()" class="carBox"><img src="IMG_20231115_114238-depositphotos-bgremover.png" ></div>
+   <div onclick="carc()" class="carBox"><img src="IMG_20231115_113930-depositphotos-bgremover.png"></div>
+   <div onclick="card()" class="carBox"><img src="IMG_20231115_114951-depositphotos-bgremover.png"></div>
+   <div onclick="care()" class="carBox"><img src="IMG_20231115_113731-depositphotos-bgremover.png" ></div>
+    <div onclick="carf()" class="carBox"><img src="IMG_20231115_114505-depositphotos-bgremover.png"></div>
+  </div>
+ </div>
+ <!-- game -->
+    <div id="game">
+     <p id="scoreGame"></p>
+     <p class="quit" onclick="exitgame()">Exit</p>
+        <div id="bluecar"><img src="blue.png" alt=""></div>
+        <div id="bluecarb"><img src="blue.png" alt=""></div>
+        <div id="racecar"><img id="playercar" src="IMG_20231115_113413-depositphotos-bgremover.png" alt=""></div>
+         <button id="leftBut">Left</button>
+    <button id="rightBut">Right</button>
+    </div>
+   
+    <div id="result">
+        <h1 class="gameo">Game Over</h1>
+        <p id="score">{{ game_data }}</p>
+        <button id="btn" onclick="location.reload()">Restart</button>
+    </div>
+
+    <audio id="jumpsound" src="jumpsound.mp3"></audio>
+    
+</body>
+<script src="main.js"></script>
+</html>
